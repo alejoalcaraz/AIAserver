@@ -4,7 +4,7 @@ const app = express();
 
 const PORT = process.env.PORT || 3030;
 
-const wss = new WebSocket.Server({ port:8082});
+const wss = new WebSocket.Server({ port:process.env.PORT || 3030});
 
 console.log("tiki");
 
